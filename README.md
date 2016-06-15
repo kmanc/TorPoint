@@ -20,9 +20,13 @@ How to run the scripts:
 In order to ensure that everything runs properly, I would suggest *NOT* having any wifi dongles plugged in during the setup.  However, you do need an internet connection, so I suggest plugging in an ethernet cable while the scripts are being run.  
 
 First thing's first, you need to get them onto your pi.  You can either do that with a flash drive or by running "wget LINK_GOES_HERE" 
+  
 Open up a terminal and move to the directory where the scripts are stored  
-Now you need to give the scripts permission to run by running "chmod +x access_point.sh" followed by "chmod +x tor_config.sh" Now you'll run access_point by running the command "sudo ./access_point.sh". Follow the instructions, and your Pi will reboot when it is done. 
+  
+Now you need to give the scripts permission to run by running "chmod +x access_point.sh" followed by "chmod +x tor_config.sh" Now you'll run access_point by running the command "sudo ./access_point.sh". Follow the instructions, and your Pi will reboot when it is done.  
+  
 Your Pi will reboot once again when that script is done. Now, you should plug in a working wifi dongle (does not need to be anything specific), and after that, plug in a wifi dongle with the rtl871xdrv driver. If the second wifi dongle plugged in does not have the correct driver, your access point probably will not work.  
+  
 You've got one more step before you're done!! Once it has rebooted, you'll open up a terminal again, move to the correct directory (again) and type "sudo ./tor_config.sh". The script will run, reboot when it is finished, and you should have a working tor access point!  Congrats :)
 
 
