@@ -33,7 +33,7 @@ You've got one more step before you're done!! Once it has rebooted, you'll open 
 TL;DR
 
 `sudo wget https://raw.githubusercontent.com/kmanc/TorPoint/master/access_point.sh`  
-`sudo wget https://raw.githubusercontent.com/kmanc/TorPoint/master/tor_config.sh` 
+`sudo wget https://raw.githubusercontent.com/kmanc/TorPoint/master/tor_config.sh`  
 `sudo chmod +x access_point.sh`  
 `sudo chmod +x tor_config.sh`  
 `sudo ./access_point.sh`  
