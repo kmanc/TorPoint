@@ -1,5 +1,5 @@
 # TorPoint  
-Two scripts made to turn a raspberry pi into an access point that routes internet traffic through tor  
+This repo contains two scripts made to turn a raspberry pi into an access point that routes internet traffic through tor  
 
 A week or so ago I decided I wanted to create a tor access point with a raspberry pi I had hanging around...boy was it harder than I hoped it would be and here is why:    
   
