@@ -25,7 +25,7 @@ Open up a terminal and move to the directory where the scripts are stored
   
 Now you need to give the scripts permission to run by running `sudo chmod +x access_point.sh` followed by `sudo chmod +x tor_config.sh` Now you'll run access_point by running the command `sudo ./access_point.sh`. Follow the instructions, and your Pi will reboot when it is done.  
   
-Your Pi will reboot once again when that script is done. Now, you should plug in a working wifi dongle (does not need to be anything specific), and after that, plug in a wifi dongle with the rtl871xdrv driver. If the second wifi dongle plugged in does not have the correct driver, your access point probably will not work.  
+Your Pi will reboot once again when that script is done. Now, you should plug in a working wifi dongle (does not need to be anything specific), and after that, plug in a wifi dongle with the rtl871xdrv driver. If the second wifi dongle plugged in does not have the correct driver, your access point probably will not work.  If you are using a raspberry pi 3 (which has built in wifi) I *think* you can just plug in one wifi dongle that has the correct driver.  Because I'm not sure, I'd suggest making sure that whichever interface shows up as wlan1 (using `ifconfig`) has that rtl driver  
   
 You've got one more step before you're done!! Once it has rebooted, you'll open up a terminal again, move to the correct directory (again) and type `sudo ./tor_config.sh`. The script will run, reboot when it is finished, and you should have a working tor access point!  Congrats :)
 
@@ -37,5 +37,5 @@ TL;DR
 `sudo chmod +x access_point.sh`  
 `sudo chmod +x tor_config.sh`  
 `sudo ./access_point.sh`  
-PLUG IN ANY WIFI DONGLE, THEN A SECOND WITH A rtl871xdrv DRIVER  
+PLUG IN ANY WIFI DONGLE, THEN A SECOND WITH A rtl871xdrv DRIVER (or plug in only one with the rtl driver if you have a raspberry pi 3)  
 `sudo ./tor_config.sh`
